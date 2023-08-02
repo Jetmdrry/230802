@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MyModelSetting"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".ui.schedule.DialogModal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加课程"
+        android:textColorHighlight="@color/cardview_light_background"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上课周:"
+            android:textSize="15dp"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_margin="10dp"/>
+
+        <Spinner
+            android:autofillHints="开始周"
+            android:id="@+id/selected_startweek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/startweek">
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="到"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="15dp" />
+        <Spinner
+            android:autofillHints="结束周"
+            android:id="@+id/selected_endweek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/endweek">
+        </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日期:    "
+            android:textSize="15dp"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_margin="10dp"/>
+
+        <Spinner
+            android:autofillHints="星期几"
+            android:id="@+id/selected_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/day">
+        </Spinner>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="节数:    "
+            android:textSize="15dp"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_margin="10dp"/>
+
+        <Spinner
+            android:autofillHints="开始节"
+            android:id="@+id/selected_starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/starttime">
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="到"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="15dp" />
+        <Spinner
+            android:autofillHints="结束节"
+            android:id="@+id/selected_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/endtime">
+        </Spinner>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标签:   "
+            android:textSize="15dp"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_margin="10dp"/>
+
+        <Spinner
+            android:autofillHints="开始周"
+            android:id="@+id/selected_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/label">
+        </Spinner>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名称:"
+            android:textSize="15dp"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="备注:"
+            android:textSize="15dp"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/teacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/close_activity"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/save_activity"
+            android:layout_width="6dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="保存" />
+    </LinearLayout>
+</LinearLayout>

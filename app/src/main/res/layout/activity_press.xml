@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MyModelSetting"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".ui.schedule.DialogModal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="详情"
+        android:textColorHighlight="@color/cardview_light_background"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上课周:"
+            android:textSize="15dp"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:text="开始周"
+            android:textSize="20dp"
+            android:textColor="@color/cardview_dark_background"
+            android:id="@+id/startweek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:text="到"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="15dp" />
+        <TextView
+            android:text="结束周"
+            android:textSize="20dp"
+            android:textColor="@color/cardview_dark_background"
+            android:id="@+id/endweek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日期:    "
+            android:textSize="15dp"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:text="日期"
+            android:textSize="20dp"
+            android:textColor="@color/cardview_dark_background"
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="节数:    "
+            android:textSize="15dp"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:text="开始节"
+            android:textSize="20dp"
+            android:textColor="@color/cardview_dark_background"
+            android:id="@+id/starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:text="到"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="15dp" />
+        <TextView
+            android:text="结束节"
+            android:textSize="20dp"
+            android:textColor="@color/cardview_dark_background"
+            android:id="@+id/endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标签:   "
+            android:textSize="15dp"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:text="标签"
+            android:textSize="20dp"
+            android:textColor="@color/cardview_dark_background"
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        </TextView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名称:"
+            android:textSize="15dp"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:text="名称"
+            android:textSize="20dp"
+            android:textColor="@color/cardview_dark_background"
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        </TextView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="备注:"
+            android:textSize="15dp"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:text="备注"
+            android:textSize="20dp"
+            android:textColor="@color/cardview_dark_background"
+            android:id="@+id/teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        </TextView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/close_activity"
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/delete_activity"
+            android:layout_width="6dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="删除"
+            android:textColor="@color/red"/>
+
+    </LinearLayout>
+
+</LinearLayout>
